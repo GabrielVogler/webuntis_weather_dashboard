@@ -13,7 +13,7 @@ public class SchoolDay {
      * 
      * @param timetableFile the file of the Timetable from the WebUntisAPI
      */
-    SchoolDay(String timetableFile) {
+    public SchoolDay(String timetableFile) {
         int length = 0;
         try {
             while (true) {
@@ -67,7 +67,7 @@ public class SchoolDay {
         return result;
     }
 
-    public static String[][] getSubjects() {
+    public String[][] getSubjects() {
         String[][] result = getArray(11);
         for (int i = 0; i < result.length; i++) {
             for (int j = 0; j < subjects.size(); j++) {

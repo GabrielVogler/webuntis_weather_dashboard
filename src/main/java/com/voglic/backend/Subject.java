@@ -16,7 +16,7 @@ public class Subject {
     String className;
     int starttime;
     int endtime;
-    public static String color;
+    public String color;
 
     /**
      * Constructor of a Subject, reads the timetable and makes a Subject with essential information
@@ -94,7 +94,7 @@ public class Subject {
             case "COPR" -> {return "#0080FF";}
             case "AM" -> {return "#FFFF00";}
             case "SEW" -> {return "#00FF00";}
-            case "CH" -> {return "#B3DEFF";}
+            case "CH" -> {return "#97C5E9";}
             case "GGP" -> {return "#80FFFF";}
             case "E" -> {return "#0080FF";}
             case "GINF" -> {return "#FFFF00";}
@@ -104,10 +104,6 @@ public class Subject {
             case "ITSI" -> {return "#E0E000";}
             default -> {return "#404040";}
         }
-    }
-
-    public static void setColor(){
-        color = "#404040";
     }
 
     @Override

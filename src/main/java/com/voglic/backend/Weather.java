@@ -69,16 +69,16 @@ public class Weather {
         switch (getWeather(city)) {
             case "Clear":
                 if (getTimeInt() > 2200 || getTimeInt() < 0500) {
-                    return ICONS_TEMPLATE_PATH + "clear_day.png";
-                } else {
                     return ICONS_TEMPLATE_PATH + "clear_night.png";
+                } else {
+                    return ICONS_TEMPLATE_PATH + "clear_day.png";
                 }
 
             case "Clouds":
                 if (getTimeInt() > 2200 || getTimeInt() < 0500) {
-                    return ICONS_TEMPLATE_PATH + "partly_cloudy_day.png";
-                } else {
                     return ICONS_TEMPLATE_PATH + "partly_cloudy_night.png";
+                } else {
+                    return ICONS_TEMPLATE_PATH + "partly_cloudy_day.png";
                 }
             case "Rain":
                 return ICONS_TEMPLATE_PATH + "rain.png";
