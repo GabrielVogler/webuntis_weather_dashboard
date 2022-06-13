@@ -8,7 +8,6 @@ com/voglic/App$1.class
 com/voglic/backend/SchoolDay.class
 com/voglic/backend/Sortbystart.class
 com/voglic/backend/WebUntisApi.class
-com/voglic/backend/JSONParser.class
 com/voglic/App.class
 com/voglic/backend/Weather.class
 com/voglic/backend/Main.class

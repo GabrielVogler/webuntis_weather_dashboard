@@ -44,6 +44,10 @@ public class SchoolDay {
         }
     }
 
+    /**
+     * 
+     * @return with is now
+     */
     public static Subject getCurrentSubject() {
         int currentTime = Time.getTimeInt();
         for (int i = 0; i < subjects.size(); i++) {
@@ -67,6 +71,10 @@ public class SchoolDay {
         return result;
     }
 
+    /**
+     * Helps to format the GUI
+     * @return  String 2d Array with informations for GUI
+     */
     public String[][] getSubjects() {
         String[][] result = getArray(11);
         for (int i = 0; i < result.length; i++) {

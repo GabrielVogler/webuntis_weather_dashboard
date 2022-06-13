@@ -5,6 +5,11 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 public class WebUntisApi {
+    /***
+     * Runs the NodeJS Application for the WebUntisApi
+     * @param command   execution command
+     * @throws Exception    if the OS is not supported
+     */
     public static void run(String command) throws Exception {
         String os = System.getProperty("os.name");
         String[] cmd;

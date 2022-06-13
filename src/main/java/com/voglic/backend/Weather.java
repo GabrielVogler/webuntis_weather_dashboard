@@ -59,11 +59,21 @@ public class Weather {
         }
     }
 
+    /**
+     * Get the weather information
+     * @param city The weather for this location
+     * @return Weather information as String
+     */
     public static String getWeather(String city) {
         update(city);
         return weather;
     }
-
+    
+    /**
+     * returns the weather icon
+     * @param city The weather icon for this location
+     * @return String value Path to weather icon
+     */
     public static String getIcon(String city) {
         update(city);
         switch (getWeather(city)) {
@@ -90,11 +100,21 @@ public class Weather {
         return weather;
     }
 
+    /**
+     * Temperature
+     * @param city  The Temparature for this location
+     * @return  Int Value for Temperature
+     */
     public static int getTemp(String city) {
         update(city);
         return temp;
     }
 
+    /**
+     * Temperature
+     * @param city The Temparature for this location
+     * @return String formated Value for Temperature
+     */
     public static String getTempString(String city) {
         return String.valueOf(getTemp(city));
     }

@@ -35,6 +35,11 @@ public class Time {
         return result[1];
     }
 
+    /**
+     * returns the current Time
+     * 
+     * @return Time
+     */
     public static int getTimeInt() {
         return Integer.parseInt(getTime().split(":")[0] + getTime().split(":")[1]);
     }
