@@ -16,7 +16,7 @@ public class Subject {
     String className;
     int starttime;
     int endtime;
-    public Color color;
+    public static String color;
 
     /**
      * Constructor of a Subject, reads the timetable and makes a Subject with essential information
@@ -52,7 +52,10 @@ public class Subject {
         this.color = getColor();
     }
     public Subject(){
-        this("XYZ", "Muster", "000", "0Xx", 0, 0);
+        this("Frei", "", "", "", 0, 0);
+    }
+    public Subject(int starttime, int endtime){
+        this("Frei", "", "", "", starttime, endtime);
     }
 
     /**
@@ -81,26 +84,30 @@ public class Subject {
      *
      * @return  defined fixed Color of Subject
      */
-    private Color getColor(){
+    private String getColor(){
         switch (name){
-            case "D" -> {return Color.ORANGE;}
-            case "BW" -> {return Color.PURPLE;}
-            case "GETE" -> {return Color.BROWN;}
-            case "BSPK" -> {return Color.GREEN;}
-            case "BS" -> {return Color.MEDIUMPURPLE;}
-            case "COPR" -> {return Color.DARKBLUE;}
-            case "AM" -> {return Color.LIGHTYELLOW;}
-            case "SEW" -> {return Color.LIGHTGREEN;}
-            case "CH" -> {return Color.MEDIUMBLUE;}
-            case "GGP" -> {return Color.LIGHTBLUE;}
-            case "E" -> {return Color.BLUE;}
-            case "GINF" -> {return Color.YELLOW;}
-            case "RK" -> {return Color.MEDIUMSEAGREEN;}
-            case "MEDT" -> {return Color.PINK;}
-            case "NWT" -> {return Color.VIOLET;}
-            case "ITSI" -> {return Color.YELLOWGREEN;}
-            default -> {return Color.LIGHTGRAY;}
+            case "D" -> {return "#F4D80B";}
+            case "BW" -> {return "#8000FF";}
+            case "GETE" -> {return "#800040";}
+            case "BSPK" -> {return "#008000";}
+            case "BS" -> {return "#A0A0FE";}
+            case "COPR" -> {return "#0080FF";}
+            case "AM" -> {return "#FFFF00";}
+            case "SEW" -> {return "#00FF00";}
+            case "CH" -> {return "#B3DEFF";}
+            case "GGP" -> {return "#80FFFF";}
+            case "E" -> {return "#0080FF";}
+            case "GINF" -> {return "#FFFF00";}
+            case "RK" -> {return "#418770";}
+            case "MEDT" -> {return "#FF0080";}
+            case "NWT" -> {return "#8080FF";}
+            case "ITSI" -> {return "#E0E000";}
+            default -> {return "#404040";}
         }
+    }
+
+    public static void setColor(){
+        color = "#404040";
     }
 
     @Override
