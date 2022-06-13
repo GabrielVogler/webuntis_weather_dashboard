@@ -4,10 +4,12 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Arrays;
 import java.util.ResourceBundle;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import com.voglic.backend.SchoolDay;
 import com.voglic.backend.Time;
 import com.voglic.backend.Weather;
 
@@ -387,9 +389,17 @@ public class PrimaryController implements Initializable {
             @Override
             public void run() {
                 Platform.runLater(() -> {
+                    String[][] lessons = SchoolDay.getSubjects(); // get Lessons
+                    // System.out.println(Arrays.deepToString(lessons)); // print Lessons
                     for (int i = 0; i <= 10; i++) {
                         for (int j = 0; j <= 3; j++) {
-                            containers[i][j].setText(Lesson.getLesson(i, j)); // set Lesson
+                            if (j < 3) {
+                                System.out.println(lessons[i][j]);
+                                containers[i][j].setText(lessons[i][j]); // set Lessons
+                            } else {
+                                hbox[i].setStyle("-fx-background-color: " + lessons[i][3]); // set Color
+                            }
+
                         }
                     }
                 });

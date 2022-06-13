@@ -1,10 +1,10 @@
-/home/vogler/Documents/Projects/Java/WebUntis_3/webuntis_weather_dashboard/src/main/java/module-info.java
-/home/vogler/Documents/Projects/Java/WebUntis_3/webuntis_weather_dashboard/src/main/java/com/voglic/backend/Time.java
-/home/vogler/Documents/Projects/Java/WebUntis_3/webuntis_weather_dashboard/src/main/java/com/voglic/backend/SchoolDay.java
-/home/vogler/Documents/Projects/Java/WebUntis_3/webuntis_weather_dashboard/src/main/java/com/voglic/App.java
-/home/vogler/Documents/Projects/Java/WebUntis_3/webuntis_weather_dashboard/src/main/java/com/voglic/PrimaryController.java
-/home/vogler/Documents/Projects/Java/WebUntis_3/webuntis_weather_dashboard/src/main/java/com/voglic/backend/WebUntisApi.java
-/home/vogler/Documents/Projects/Java/WebUntis_3/webuntis_weather_dashboard/src/main/java/com/voglic/backend/Weather.java
-/home/vogler/Documents/Projects/Java/WebUntis_3/webuntis_weather_dashboard/src/main/java/com/voglic/backend/Main.java
-/home/vogler/Documents/Projects/Java/WebUntis_3/webuntis_weather_dashboard/src/main/java/com/voglic/backend/JSONParser.java
-/home/vogler/Documents/Projects/Java/WebUntis_3/webuntis_weather_dashboard/src/main/java/com/voglic/backend/Subject.java
+/Users/filipilic/Library/CloudStorage/OneDrive-HTLWien3Rennweg/Schule/Schuljahr_2021_22/SEW/Intellj IDEA/School/Dashboard/webuntis_weather_dashboard/src/main/java/com/voglic/backend/JSONParser.java
+/Users/filipilic/Library/CloudStorage/OneDrive-HTLWien3Rennweg/Schule/Schuljahr_2021_22/SEW/Intellj IDEA/School/Dashboard/webuntis_weather_dashboard/src/main/java/com/voglic/backend/Subject.java
+/Users/filipilic/Library/CloudStorage/OneDrive-HTLWien3Rennweg/Schule/Schuljahr_2021_22/SEW/Intellj IDEA/School/Dashboard/webuntis_weather_dashboard/src/main/java/module-info.java
+/Users/filipilic/Library/CloudStorage/OneDrive-HTLWien3Rennweg/Schule/Schuljahr_2021_22/SEW/Intellj IDEA/School/Dashboard/webuntis_weather_dashboard/src/main/java/com/voglic/App.java
+/Users/filipilic/Library/CloudStorage/OneDrive-HTLWien3Rennweg/Schule/Schuljahr_2021_22/SEW/Intellj IDEA/School/Dashboard/webuntis_weather_dashboard/src/main/java/com/voglic/backend/WebUntisApi.java
+/Users/filipilic/Library/CloudStorage/OneDrive-HTLWien3Rennweg/Schule/Schuljahr_2021_22/SEW/Intellj IDEA/School/Dashboard/webuntis_weather_dashboard/src/main/java/com/voglic/backend/Weather.java
+/Users/filipilic/Library/CloudStorage/OneDrive-HTLWien3Rennweg/Schule/Schuljahr_2021_22/SEW/Intellj IDEA/School/Dashboard/webuntis_weather_dashboard/src/main/java/com/voglic/PrimaryController.java
+/Users/filipilic/Library/CloudStorage/OneDrive-HTLWien3Rennweg/Schule/Schuljahr_2021_22/SEW/Intellj IDEA/School/Dashboard/webuntis_weather_dashboard/src/main/java/com/voglic/backend/Time.java
+/Users/filipilic/Library/CloudStorage/OneDrive-HTLWien3Rennweg/Schule/Schuljahr_2021_22/SEW/Intellj IDEA/School/Dashboard/webuntis_weather_dashboard/src/main/java/com/voglic/backend/Main.java
+/Users/filipilic/Library/CloudStorage/OneDrive-HTLWien3Rennweg/Schule/Schuljahr_2021_22/SEW/Intellj IDEA/School/Dashboard/webuntis_weather_dashboard/src/main/java/com/voglic/backend/SchoolDay.java

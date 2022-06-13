@@ -10,20 +10,21 @@ public class SchoolDay {
 
     /**
      * Constructor of the Object, the Object is an array of Subjects
+     * 
      * @param timetableFile the file of the Timetable from the WebUntisAPI
      */
     SchoolDay(String timetableFile) {
         int length = 0;
         try {
-            while (true){
+            while (true) {
                 new Subject(timetableFile, length);
                 length++;
             }
-        }catch (IndexOutOfBoundsException e){
+        } catch (IndexOutOfBoundsException e) {
             System.out.println("Succesfully read the length!");
         }
         subjectArray = new Subject[length];
-        for (int i = 0; i < length; i++){
+        for (int i = 0; i < length; i++) {
             subjectArray[i] = new Subject(timetableFile, i);
         }
         Arrays.sort(subjectArray, new Sortbystart());
@@ -32,29 +33,30 @@ public class SchoolDay {
         subjectArray = subjects.toArray(new Subject[subjects.size()]);
     }
 
-    private static void fixLessons(){
-        for(int i = 0; i < subjects.size(); i++){
-            for(int j = 0; j < subjects.size(); j++){
-                if(subjects.get(i).starttime == subjects.get(j).starttime && i != j){
+    private static void fixLessons() {
+        for (int i = 0; i < subjects.size(); i++) {
+            for (int j = 0; j < subjects.size(); j++) {
+                if (subjects.get(i).starttime == subjects.get(j).starttime && i != j) {
                     subjects.get(i).teacher += ", " + subjects.get(j).teacher;
                     subjects.remove(j);
                 }
             }
         }
     }
-    public static Subject getCurrentSubject(){
+
+    public static Subject getCurrentSubject() {
         int currentTime = Time.getTimeInt();
-        for (int i = 0; i < subjects.size(); i++){
-            if(subjects.get(i).starttime <= currentTime && subjects.get(i).endtime >= currentTime){
+        for (int i = 0; i < subjects.size(); i++) {
+            if (subjects.get(i).starttime <= currentTime && subjects.get(i).endtime >= currentTime) {
                 return subjects.get(i);
             }
         }
         return new Subject();
     }
 
-    private static String[][] getArray(int size){
+    private static String[][] getArray(int size) {
         String[][] result = new String[size][5];
-        for (int i = 0; i < size; i++){
+        for (int i = 0; i < size; i++) {
             Subject subject = new Subject(getStarttime(i), getStarttime(i) + 50);
             result[i][0] = subject.name;
             result[i][1] = subject.teacher;
@@ -65,12 +67,12 @@ public class SchoolDay {
         return result;
     }
 
-    public static String[][] getSubjects(){
+    public static String[][] getSubjects() {
         String[][] result = getArray(11);
         for (int i = 0; i < result.length; i++) {
-            for (int j = 0; j < subjects.size(); j++){
+            for (int j = 0; j < subjects.size(); j++) {
                 Subject subject = subjects.get(j);
-                if(Integer.parseInt(result[i][4]) == subject.starttime){
+                if (Integer.parseInt(result[i][4]) == subject.starttime) {
                     result[i][0] = subject.name;
                     result[i][1] = subject.teacher;
                     result[i][2] = subject.room;
@@ -79,23 +81,48 @@ public class SchoolDay {
                 }
             }
         }
+        System.out.println(Arrays.deepToString(result));
         return result;
     }
 
-    private static int getStarttime(int index){
-        switch(index){
-            case 0 -> {return 800;}
-            case 1 -> {return 850;}
-            case 2 -> {return 955;}
-            case 3 -> {return 1045;}
-            case 4 -> {return 1135;}
-            case 5 -> {return 1235;}
-            case 6 -> {return 1325;}
-            case 7 -> {return 1415;}
-            case 8 -> {return 1515;}
-            case 9 -> {return 1605;}
-            case 10 -> {return 1655;}
-            default -> {return 0;}
+    private static int getStarttime(int index) {
+        switch (index) {
+            case 0 -> {
+                return 800;
+            }
+            case 1 -> {
+                return 850;
+            }
+            case 2 -> {
+                return 955;
+            }
+            case 3 -> {
+                return 1045;
+            }
+            case 4 -> {
+                return 1135;
+            }
+            case 5 -> {
+                return 1235;
+            }
+            case 6 -> {
+                return 1325;
+            }
+            case 7 -> {
+                return 1415;
+            }
+            case 8 -> {
+                return 1515;
+            }
+            case 9 -> {
+                return 1605;
+            }
+            case 10 -> {
+                return 1655;
+            }
+            default -> {
+                return 0;
+            }
         }
     }
 
@@ -110,7 +137,7 @@ public class SchoolDay {
  */
 class Sortbystart implements Comparator<Subject> {
     @Override
-    public int compare(Subject a, Subject b){
+    public int compare(Subject a, Subject b) {
         return a.starttime - b.starttime;
     }
 }
