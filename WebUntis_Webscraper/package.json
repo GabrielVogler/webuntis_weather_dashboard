@@ -1,0 +1,16 @@
+{
+  "name": "webuntis_webscraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Gabriel Vogler",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "env": "0.0.2",
+    "webuntis": "^1.20.1"
+  }
+}
