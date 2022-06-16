@@ -403,60 +403,62 @@ public class PrimaryController implements Initializable {
 
                         }
                     }
+                    String customStyle = "-fx-background-radius: 20px;";
+
                     lesson1.setText(lessons[0][0]);
                     teacher1.setText(lessons[0][1]);
                     room1.setText(lessons[0][2]);
-                    hbox1.setStyle("-fx-background-color: " + lessons[0][3]);
+                    hbox1.setStyle(customStyle + "-fx-background-color: " + lessons[0][3]);
 
                     lesson2.setText(lessons[1][0]);
                     teacher2.setText(lessons[1][1]);
                     room2.setText(lessons[1][2]);
-                    hbox2.setStyle("-fx-background-color: " + lessons[1][3]);
+                    hbox2.setStyle(customStyle + "-fx-background-color: " + lessons[1][3]);
 
                     lesson3.setText(lessons[2][0]);
                     teacher3.setText(lessons[2][1]);
                     room3.setText(lessons[2][2]);
-                    hbox3.setStyle("-fx-background-color: " + lessons[2][3]);
+                    hbox3.setStyle(customStyle + "-fx-background-color: " + lessons[2][3]);
 
                     lesson4.setText(lessons[3][0]);
                     teacher4.setText(lessons[3][1]);
                     room4.setText(lessons[3][2]);
-                    hbox4.setStyle("-fx-background-color: " + lessons[3][3]);
+                    hbox4.setStyle(customStyle + "-fx-background-color: " + lessons[3][3]);
 
                     lesson5.setText(lessons[4][0]);
                     teacher5.setText(lessons[4][1]);
                     room5.setText(lessons[4][2]);
-                    hbox5.setStyle("-fx-background-color: " + lessons[4][3]);
+                    hbox5.setStyle(customStyle + "-fx-background-color: " + lessons[4][3]);
 
                     lesson6.setText(lessons[5][0]);
                     teacher6.setText(lessons[5][1]);
                     room6.setText(lessons[5][2]);
-                    hbox6.setStyle("-fx-background-color: " + lessons[5][3]);
+                    hbox6.setStyle(customStyle + "-fx-background-color: " + lessons[5][3]);
 
                     lesson7.setText(lessons[6][0]);
                     teacher7.setText(lessons[6][1]);
                     room7.setText(lessons[6][2]);
-                    hbox7.setStyle("-fx-background-color: " + lessons[6][3]);
+                    hbox7.setStyle(customStyle + "-fx-background-color: " + lessons[6][3]);
 
                     lesson8.setText(lessons[7][0]);
                     teacher8.setText(lessons[7][1]);
                     room8.setText(lessons[7][2]);
-                    hbox8.setStyle("-fx-background-color: " + lessons[7][3]);
+                    hbox8.setStyle(customStyle + "-fx-background-color: " + lessons[7][3]);
 
                     lesson9.setText(lessons[8][0]);
                     teacher9.setText(lessons[8][1]);
                     room9.setText(lessons[8][2]);
-                    hbox9.setStyle("-fx-background-color: " + lessons[8][3]);
+                    hbox9.setStyle(customStyle + "-fx-background-color: " + lessons[8][3]);
 
                     lesson10.setText(lessons[9][0]);
                     teacher10.setText(lessons[9][1]);
                     room10.setText(lessons[9][2]);
-                    hbox10.setStyle("-fx-background-color: " + lessons[9][3]);
+                    hbox10.setStyle(customStyle + "-fx-background-color: " + lessons[9][3]);
 
                     lesson11.setText(lessons[10][0]);
                     teacher11.setText(lessons[10][1]);
                     room11.setText(lessons[10][2]);
-                    hbox11.setStyle("-fx-background-color: " + lessons[10][3]);
+                    hbox11.setStyle(customStyle + "-fx-background-color: " + lessons[10][3]);
                 });
             }
         };
@@ -468,6 +470,11 @@ public class PrimaryController implements Initializable {
                 10000L); // time between executions 10000 ms = 10s
     }
 
+    
+    /** 
+     * @param arg0
+     * @param arg1
+     */
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
         clockLoop();

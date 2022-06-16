@@ -73,9 +73,22 @@ public class Subject {
         if (ifTime) return subjectJSON.get(variable).toString();
         else return ((JSONObject) (((JSONArray) subjectJSON.get(variable))).get(0)).get(nameSwitch).toString();
     }
+    
+    /** 
+     * @param subjectJSON
+     * @param variable
+     * @param ifTime
+     * @return String
+     */
     private static String getVariable(JSONObject subjectJSON, String variable, boolean ifTime) {
         return getVariable(subjectJSON, variable, ifTime, true);
     }
+    
+    /** 
+     * @param subjectJSON
+     * @param variable
+     * @return String
+     */
     private static String getVariable(JSONObject subjectJSON, String variable) {
         return getVariable(subjectJSON, variable, false, true);
     }
@@ -94,7 +107,7 @@ public class Subject {
             case "COPR" -> {return "#0080FF";}
             case "AM" -> {return "#FFFF00";}
             case "SEW" -> {return "#00FF00";}
-            case "CH" -> {return "#97C5E9";}
+            case "CH" -> {return "#557289";}
             case "GGP" -> {return "#80FFFF";}
             case "E" -> {return "#0080FF";}
             case "GINF" -> {return "#FFFF00";}
@@ -106,6 +119,10 @@ public class Subject {
         }
     }
 
+    
+    /** 
+     * @return String
+     */
     @Override
     public String toString() {
         //return name + " - " + teacher + ": " + starttime + " - " + endtime;

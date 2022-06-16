@@ -1,6 +1,11 @@
 package com.voglic.backend;
 
 public class Main {
+    
+    /** 
+     * @param args
+     * @throws Exception
+     */
     public static void main(String[] args) throws Exception {
         // Test Subject
         Subject am = new Subject("files/JSON_Stunden/timetable.json", 0);

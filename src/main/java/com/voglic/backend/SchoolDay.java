@@ -58,6 +58,11 @@ public class SchoolDay {
         return new Subject();
     }
 
+    
+    /** 
+     * @param size
+     * @return String[][]
+     */
     private static String[][] getArray(int size) {
         String[][] result = new String[size][5];
         for (int i = 0; i < size; i++) {
@@ -93,6 +98,11 @@ public class SchoolDay {
         return result;
     }
 
+    
+    /** 
+     * @param index
+     * @return int
+     */
     private static int getStarttime(int index) {
         switch (index) {
             case 0 -> {
@@ -134,6 +144,10 @@ public class SchoolDay {
         }
     }
 
+    
+    /** 
+     * @return String
+     */
     @Override
     public String toString() {
         return "SchoolDay: " + Arrays.toString(subjectArray);

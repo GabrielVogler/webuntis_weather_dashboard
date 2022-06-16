@@ -4,7 +4,7 @@ const untis = new WebUntis('htl3r', process.env.LOGIN, process.env.PASSWORD, 'ur
 const fs = require("fs");
 const { exit } = require('process');
 const date = new Date();
-date.setDate(date.getDate());
+date.setDate(date.getDate() -2);
 
 untis
     .login()
